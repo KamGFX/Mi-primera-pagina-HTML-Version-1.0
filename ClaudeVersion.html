@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube</title>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       BARRA DE NAVEGACIÓN SUPERIOR
+  ═══════════════════════════════════════════════ -->
+  <header>
+    <table width="100%" border="0" cellpadding="6" cellspacing="0">
+      <tr>
+        <!-- Logo -->
+        <td width="180">
+          <a href="#">
+            <big><big><big><strong>&#9654; YouTube</strong></big></big></big>
+          </a>
+        </td>
+
+        <!-- Barra de búsqueda central -->
+        <td align="center">
+          <form action="#" method="get">
+            <input
+              type="search"
+              name="q"
+              size="55"
+              placeholder="Buscar"
+              accesskey="s"
+              title="Buscar en YouTube"
+            />
+            <button type="submit">&#128269; Buscar</button>
+            &nbsp;
+            <button type="button" title="Buscar por voz">&#127908;</button>
+          </form>
+        </td>
+
+        <!-- Menú de usuario -->
+        <td width="220" align="right">
+          <nav aria-label="Menú de usuario">
+            <a href="#" title="Crear contenido">&#43; Crear</a>
+            &nbsp;&nbsp;
+            <a href="#" title="Notificaciones">&#128276; <sup><small>9+</small></sup></a>
+            &nbsp;&nbsp;
+            <a href="#" title="Mi cuenta">
+              <abbr title="Mi cuenta">
+                <strong>[MJ]</strong>
+              </abbr>
+            </a>
+          </nav>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- Filtros de categorías / chips -->
+    <nav aria-label="Filtros de categorías">
+      <a href="#">Todo</a> &nbsp;|&nbsp;
+      <a href="#">Música</a> &nbsp;|&nbsp;
+      <a href="#">Gaming</a> &nbsp;|&nbsp;
+      <a href="#">Noticias</a> &nbsp;|&nbsp;
+      <a href="#">En vivo</a> &nbsp;|&nbsp;
+      <a href="#">Tecnología</a> &nbsp;|&nbsp;
+      <a href="#">Deportes</a> &nbsp;|&nbsp;
+      <a href="#">Películas</a> &nbsp;|&nbsp;
+      <a href="#">Cocina</a> &nbsp;|&nbsp;
+      <a href="#">Ciencia</a> &nbsp;|&nbsp;
+      <a href="#">Comedia</a> &nbsp;|&nbsp;
+      <a href="#">Viajes</a>
+    </nav>
+
+    <hr />
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════════
+       LAYOUT PRINCIPAL: sidebar + contenido
+  ═══════════════════════════════════════════════ -->
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr valign="top">
+
+      <!-- ─────────────────────────────────────────
+           MENÚ LATERAL IZQUIERDO
+      ───────────────────────────────────────── -->
+      <td width="210">
+        <aside>
+          <nav aria-label="Menú principal">
+            <ul>
+              <li><a href="#"><strong>&#127968; Inicio</strong></a></li>
+              <li><a href="#">&#9889; Shorts</a></li>
+              <li><a href="#">&#128250; Suscripciones</a></li>
+            </ul>
+            <hr />
+            <details open>
+              <summary><strong>Tú</strong></summary>
+              <ul>
+                <li><a href="#">&#128100; Tu canal</a></li>
+                <li><a href="#">&#128337; Ver más tarde</a></li>
+                <li><a href="#">&#128077; Videos que me gustan</a></li>
+                <li><a href="#">&#128190; Descargas</a></li>
+                <li><a href="#">&#128250; Tu videoteca</a></li>
+                <li><a href="#">&#128250; Historial</a></li>
+              </ul>
+            </details>
+            <hr />
+            <details open>
+              <summary><strong>Suscripciones</strong></summary>
+              <ul>
+                <li><a href="#">&#127897; Marques Brownlee</a></li>
+                <li><a href="#">&#127897; Linus Tech Tips</a></li>
+                <li><a href="#">&#127897; Veritasium</a></li>
+                <li><a href="#">&#127897; MrBeast</a></li>
+                <li><a href="#">&#127897; Kurzgesagt</a></li>
+                <li><a href="#">&#128516; Mostrar más</a></li>
+              </ul>
+            </details>
+            <hr />
+            <details>
+              <summary><strong>Explorar</strong></summary>
+              <ul>
+                <li><a href="#">&#128293; En tendencia</a></li>
+                <li><a href="#">&#127916; YouTube Premium</a></li>
+                <li><a href="#">&#127925; Música</a></li>
+                <li><a href="#">&#127918; Gaming</a></li>
+                <li><a href="#">&#128250; Noticias</a></li>
+                <li><a href="#">&#127955; Deportes</a></li>
+                <li><a href="#">&#127891; Aprendizaje</a></li>
+                <li><a href="#">&#128276; Podcasts</a></li>
+              </ul>
+            </details>
+            <hr />
+            <section aria-label="Configuración y ayuda">
+              <ul>
+                <li><a href="#">&#9881;&#65039; Configuración</a></li>
+                <li><a href="#">&#127988; Historial de informes</a></li>
+                <li><a href="#">&#10067; Ayuda</a></li>
+                <li><a href="#">&#128172; Enviar comentarios</a></li>
+              </ul>
+            </section>
+            <hr />
+            <footer>
+              <small>
+                <a href="#">Acerca de</a> &middot;
+                <a href="#">Prensa</a> &middot;
+                <a href="#">Derechos de autor</a><br />
+                <a href="#">Contacto</a> &middot;
+                <a href="#">Creadores</a><br />
+                <a href="#">Publicidad</a> &middot;
+                <a href="#">Desarrolladores</a><br /><br />
+                <a href="#">Términos</a> &middot;
+                <a href="#">Privacidad</a> &middot;
+                <a href="#">Política y seguridad</a><br />
+                <a href="#">Cómo funciona YouTube</a><br />
+                <a href="#">Probar nuevas funciones</a><br /><br />
+                <small>&copy; 2025 Google LLC</small>
+              </small>
+            </footer>
+          </nav>
+        </aside>
+      </td>
+
+      <!-- ─────────────────────────────────────────
+           ÁREA PRINCIPAL DE VIDEOS
+      ───────────────────────────────────────── -->
+      <td>
+        <main>
+
+          <!-- ·····································
+               SECCIÓN: Videos recomendados
+          ····································· -->
+          <section aria-labelledby="titulo-recomendados">
+            <h2 id="titulo-recomendados" hidden>Videos recomendados</h2>
+
+            <!-- Cuadrícula de videos usando table para compatibilidad sin CSS -->
+            <table border="0" cellpadding="12" cellspacing="8" width="100%">
+              <tr valign="top">
+
+                <!-- ──── TARJETA DE VIDEO 1 ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: JavaScript en 100 segundos">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/js100/320/180"
+                          alt="Miniatura: JavaScript en 100 segundos"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small>
+                            <kbd>1:42</kbd>
+                          </small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#" title="Canal Fireship">
+                            <img
+                              src="https://picsum.photos/seed/ch1/36/36"
+                              alt="Avatar canal Fireship"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>JavaScript en 100 segundos</strong>
+                          </a><br />
+                          <small>
+                            <a href="#">Fireship</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_squircle_%282017%29.svg/16px-YouTube_social_white_squircle_%282017%29.svg.png" alt="verificado" width="12" height="12" />
+                          </small><br />
+                          <small><data value="4200000">4,2M visualizaciones</data> &middot; <time datetime="2023-03-10">hace 2 años</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">No recomendar canal</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                              <li><a href="#">Denunciar</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+                <!-- ──── TARJETA DE VIDEO 2 ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: Cómo funciona el DNS explicado">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/dns99/320/180"
+                          alt="Miniatura: Cómo funciona el DNS explicado"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>8:27</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch2/36/36"
+                              alt="Avatar canal ByteByteGo"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>Cómo funciona el DNS explicado</strong>
+                          </a><br />
+                          <small><a href="#">ByteByteGo</a></small><br />
+                          <small><data value="890000">890K visualizaciones</data> &middot; <time datetime="2024-01-15">hace 5 meses</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+                <!-- ──── TARJETA DE VIDEO 3 ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: La verdad sobre los agujeros negros">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/blackhole/320/180"
+                          alt="Miniatura: La verdad sobre los agujeros negros"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>14:03</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch3/36/36"
+                              alt="Avatar canal Kurzgesagt"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>La verdad sobre los agujeros negros</strong>
+                          </a><br />
+                          <small>
+                            <a href="#">Kurzgesagt – In a Nutshell</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_squircle_%282017%29.svg/16px-YouTube_social_white_squircle_%282017%29.svg.png" alt="verificado" width="12" height="12" />
+                          </small><br />
+                          <small><data value="21000000">21M visualizaciones</data> &middot; <time datetime="2022-07-01">hace 2 años</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+              </tr>
+              <tr valign="top">
+
+                <!-- ──── TARJETA DE VIDEO 4 ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: ¿Qué tan rápido es el Nuevo MacBook Pro M3?">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/macbookm3/320/180"
+                          alt="Miniatura: MacBook Pro M3 benchmark"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>18:55</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch4/36/36"
+                              alt="Avatar canal MKBHD"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>¿Qué tan rápido es el Nuevo MacBook Pro M3?</strong>
+                          </a><br />
+                          <small>
+                            <a href="#">Marques Brownlee</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_squircle_%282017%29.svg/16px-YouTube_social_white_squircle_%282017%29.svg.png" alt="verificado" width="12" height="12" />
+                          </small><br />
+                          <small><data value="7300000">7,3M visualizaciones</data> &middot; <time datetime="2023-11-20">hace 7 meses</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+                <!-- ──── TARJETA DE VIDEO 5 ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: Aprendí a programar en 30 días — esto pasó">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/coding30/320/180"
+                          alt="Miniatura: Aprendí a programar en 30 días"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>22:14</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch5/36/36"
+                              alt="Avatar canal Traversy Media"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>Aprendí a programar en 30 días — esto pasó</strong>
+                          </a><br />
+                          <small><a href="#">Traversy Media</a></small><br />
+                          <small><data value="3100000">3,1M visualizaciones</data> &middot; <time datetime="2023-08-05">hace 10 meses</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+                <!-- ──── TARJETA DE VIDEO 6 ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: El universo observable explicado">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/universe7/320/180"
+                          alt="Miniatura: El universo observable explicado"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>11:39</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch6/36/36"
+                              alt="Avatar canal Veritasium"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>El universo observable explicado</strong>
+                          </a><br />
+                          <small>
+                            <a href="#">Veritasium</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_squircle_%282017%29.svg/16px-YouTube_social_white_squircle_%282017%29.svg.png" alt="verificado" width="12" height="12" />
+                          </small><br />
+                          <small><data value="15600000">15,6M visualizaciones</data> &middot; <time datetime="2021-12-01">hace 3 años</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+              </tr>
+              <tr valign="top">
+
+                <!-- ──── TARJETA DE VIDEO 7 (BONO) ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: Yo construí una PC Gamer por $300">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/pcgamer300/320/180"
+                          alt="Miniatura: PC Gamer por $300"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>31:08</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch7/36/36"
+                              alt="Avatar canal Linus Tech Tips"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>Yo construí una PC Gamer por $300</strong>
+                          </a><br />
+                          <small>
+                            <a href="#">Linus Tech Tips</a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_squircle_%282017%29.svg/16px-YouTube_social_white_squircle_%282017%29.svg.png" alt="verificado" width="12" height="12" />
+                          </small><br />
+                          <small><data value="9800000">9,8M visualizaciones</data> &middot; <time datetime="2023-06-12">hace 1 año</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+                <!-- ──── TARJETA DE VIDEO 8 (BONO) ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: Reaccioné a los mejores memes de programación">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/devmemes/320/180"
+                          alt="Miniatura: Memes de programación"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>9:52</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch8/36/36"
+                              alt="Avatar canal ThePrimeagen"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>Reaccioné a los mejores memes de programación</strong>
+                          </a><br />
+                          <small><a href="#">ThePrimeagen</a></small><br />
+                          <small><data value="1200000">1,2M visualizaciones</data> &middot; <time datetime="2024-02-28">hace 3 meses</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+                <!-- ──── TARJETA DE VIDEO 9 (BONO) ──── -->
+                <td width="33%">
+                  <article>
+                    <a href="#" title="Ver: Python vs Rust — ¿Cuál deberías aprender?">
+                      <figure>
+                        <img
+                          src="https://picsum.photos/seed/pythonrust/320/180"
+                          alt="Miniatura: Python vs Rust"
+                          width="320"
+                          height="180"
+                        />
+                        <figcaption>
+                          <small><kbd>16:47</kbd></small>
+                        </figcaption>
+                      </figure>
+                    </a>
+                    <table border="0" cellpadding="2" width="100%">
+                      <tr valign="top">
+                        <td width="40">
+                          <a href="#">
+                            <img
+                              src="https://picsum.photos/seed/ch9/36/36"
+                              alt="Avatar canal NetworkChuck"
+                              width="36"
+                              height="36"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <strong>Python vs Rust — ¿Cuál deberías aprender?</strong>
+                          </a><br />
+                          <small><a href="#">NetworkChuck</a></small><br />
+                          <small><data value="2400000">2,4M visualizaciones</data> &middot; <time datetime="2024-03-10">hace 2 meses</time></small>
+                        </td>
+                        <td width="24" align="right" valign="top">
+                          <details>
+                            <summary title="Más opciones">&#8942;</summary>
+                            <menu>
+                              <li><a href="#">No me interesa</a></li>
+                              <li><a href="#">Guardar en lista</a></li>
+                              <li><a href="#">Compartir</a></li>
+                            </menu>
+                          </details>
+                        </td>
+                      </tr>
+                    </table>
+                  </article>
+                </td>
+
+              </tr>
+            </table>
+
+          </section>
+
+        </main>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
